@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskListFragment">
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="br.com.brunorodrigues.taskmanager.presentation.list.TaskListFragment"
+        android:label="TaskListFragment"
+        tools:layout="@layout/fragment_task_list">
+        <action
+            android:id="@+id/action_taskListFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_taskListFragment_to_detailTaskFragment"
+            app:destination="@id/detailTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="br.com.brunorodrigues.taskmanager.presentation.form.AddTaskFragment"
+        android:label="AddTaskFragment"
+        tools:layout="@layout/fragment_add_task" />
+    <fragment
+        android:id="@+id/detailTaskFragment"
+        android:name="br.com.brunorodrigues.taskmanager.presentation.detail.UpdateTaskFragment"
+        android:label="DetailTaskFragment"
+        tools:layout="@layout/fragment_update_task">
+        <argument
+            android:name="task"
+            app:argType="br.com.brunorodrigues.taskmanager.presentation.list.TaskNavModel" />
+    </fragment>
+</navigation>

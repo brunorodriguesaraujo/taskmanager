@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">taskmanager</string>
+    <string name="done">Concluída</string>
+    <string name="pending">Pendente</string>
+    <string name="text_empty_tasks">Não há nada aqui.\nCrie uma nova tarefa</string>
+    <string name="add_task">Adicionar Tarefa</string>
+    <string name="title">Título</string>
+    <string name="description">Descrição</string>
+    <string name="save">Salvar</string>
+    <string name="task_edit">Editar Tarefa</string>
+    <string name="delete">Deletar</string>
+    <string name="mark_completed">Marcar como concluída</string>
+    <string name="task_done">Tarefa concluída</string>
+</resources>
